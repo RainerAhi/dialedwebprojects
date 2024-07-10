@@ -333,6 +333,7 @@ em {
   display: flex;
   flex-direction: column;
   gap: 15vh;
+  background-color: #fefeff;
 }
 
 .projects-section-title {
@@ -350,6 +351,7 @@ em {
   flex-wrap: wrap;
   row-gap: 4vw;
   justify-content: space-between;
+  background-color: #fefeff;
 }
 
 .project {
@@ -359,6 +361,7 @@ em {
   flex-direction: column;
   gap: 1vw;
   cursor: pointer;
+  background-color: #fefeff;
 }
 
 .project-image {
@@ -367,6 +370,7 @@ em {
   height: 60vh;
   border-radius: 25px;
   position: relative;
+  background-color: #fefeff;
 }
 
 .project-image img {
@@ -374,6 +378,7 @@ em {
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+  background-color: #ccc;
 }
 
 .project-image:hover img {
@@ -386,7 +391,8 @@ em {
   display: flex;
   flex-direction: column;
   gap: 0.15vw;
-  position: relative; /* Ensure relative positioning for pseudo-element positioning */
+  position: relative;
+  background-color: #fefeff;
 }
 
 .project-text-container-title {
