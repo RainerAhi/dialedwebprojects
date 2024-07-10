@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+@font-face {
+  font-family: 'SFBOLD';
+  src: url('SFBOLD.otf') format('OpenType');
+}
+
+@font-face {
+  font-family: 'SFMEDIUM';
+  src: url('SFMEDIUM.otf') format('OpenType');
+}
+
 .overlay-button-container {
   width: 100vw;
   height: 100vh;
@@ -27,8 +37,8 @@
 
 .project-button-text {
   font-size: 0.8vw;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-family: "SFMEDIUM", sans-serif;
+  font-weight: normal;
 }
 
 .project-button:hover {
@@ -267,8 +277,8 @@ Z.web-gl {
   
   .project-button-text {
     font-size: 0.8rem;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
+    font-family: "SFMEDIUM", sans-serif;
+    font-weight: normal;
   }
   
   .project-button:hover {

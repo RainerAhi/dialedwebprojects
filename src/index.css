@@ -316,6 +316,16 @@ em {
   background: #00000050;
 }
 
+@font-face {
+  font-family: 'SFBOLD';
+  src: url('SFBOLD.otf') format('OpenType');
+}
+
+@font-face {
+  font-family: 'SFMEDIUM';
+  src: url('SFMEDIUM.otf') format('OpenType');
+}
+
 .projects-section {
   position: absolute;
   width: 100%;
@@ -337,8 +347,8 @@ em {
 }
 
 .projects-section-title {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-family: "SFBOLD", sans-serif;
+  font-weight: normal;
   font-size: 8vw;
   line-height: 1;
   margin: 0;
@@ -401,8 +411,8 @@ em {
 
 .project-text-title, .project-text-description {
   font-size: 1.1vw;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-family: "SFMEDIUM", sans-serif;
+  font-weight: normal;
   margin: 0;
   line-height: 100%;
   color: #000000;
@@ -449,8 +459,8 @@ em {
   }
   
   .projects-section-title {
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
+    font-family: "SFBOLD", sans-serif;
+    font-weight: normal;
     font-size: 4rem;
     line-height: 1;
     margin: 0;
@@ -513,8 +523,8 @@ em {
   
   .project-text-title, .project-text-description {
     font-size: 0.9rem;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
+    font-family: "SFMEDIUM", sans-serif;
+    font-weight: normal;
     margin: 0;
     line-height: 100%;
     color: #000000;
