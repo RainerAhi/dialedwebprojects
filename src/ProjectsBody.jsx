@@ -26,13 +26,18 @@ export default function ProjectBody({ open }) {
     }
   }, [open]);
 
+  // eslint-disable-next-line no-unused-vars
+  const handleClick = (linkUrl) => {
+    window.open(linkUrl, '_blank');
+  };
+
   return (
     <section ref={menuRef} className="projects-section">
       <div className="projects-section-content">
         <h1 className="projects-section-title" >Projects</h1>
         <div className="projects-section-container">
 
-          <div className="project">
+          <div className="project" onClick={() => handleClick('https://www.instagram.com/dialedweb/')} >
             <div className="project-image">
               <img src="/project1.png" alt="Project 1" />
             </div>
@@ -45,7 +50,7 @@ export default function ProjectBody({ open }) {
             </div>
           </div>
 
-          <div className="project">
+          <div className="project" onClick={() => handleClick('https://www.instagram.com/dialedweb/')} >
             <div className="project-image">
               <img src="/project2.png" alt="Project 2" />
             </div>
@@ -58,7 +63,7 @@ export default function ProjectBody({ open }) {
             </div>
           </div>
 
-          <div className="project">
+          <div className="project" onClick={() => handleClick('https://www.instagram.com/dialedweb/')}>
             <div className="project-image">
               <img src="/project3.png" alt="Project 3" />
             </div>
@@ -71,7 +76,7 @@ export default function ProjectBody({ open }) {
             </div>
           </div>
 
-          <div className="project">
+          <div className="project" onClick={() => handleClick('https://www.instagram.com/dialedweb/')}>
             <div className="project-image">
               <img src="/project4.png" alt="Project 4" />
             </div>
@@ -84,7 +89,7 @@ export default function ProjectBody({ open }) {
             </div>
           </div>
 
-          <div className="project">
+          <div className="project" onClick={() => handleClick('https://www.instagram.com/dialedweb/')}>
             <div className="project-image">
               <img src="/project1.png" alt="Project 5" />
             </div>
@@ -97,7 +102,7 @@ export default function ProjectBody({ open }) {
             </div>
           </div>
 
-          <div className="project">
+          <div className="project" onClick={() => handleClick('https://www.instagram.com/dialedweb/')}>
             <div className="project-image">
               <img src="/project2.png" alt="Project 1" />
             </div>

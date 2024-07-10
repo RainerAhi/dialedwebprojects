@@ -19,7 +19,7 @@
   transition: box-shadow 0.3s ease;
   position: fixed;
   top: 1vw;
-  right: -91vw;
+  right: 1vw;
   z-index: 100;
   border: 1px solid #00000050;
   color: #000000;
@@ -92,10 +92,6 @@ a {
 }
 
 .btn {
-  width: fit-content;
-  position: relative;
-  display: grid;
-  place-content: center;
 
   svg {
     width: 100%;
@@ -105,7 +101,6 @@ a {
 }
 
 [data-hover] {
-  position: relative;
 
   [data-hover-bounds] {
     position: absolute;
@@ -241,6 +236,104 @@ Z.web-gl {
 @media screen and (min-width: 768px) {
   .nav-con {
     display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay-button-container {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .project-button {
+    width: fit-content;
+    height: 2.25rem;
+    background-color: #fefeff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3%;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    position: fixed;
+    top: 3vw;
+    right: 3vw;
+    z-index: 100;
+    border: 1px solid #00000050;
+    color: #000000;
+  }
+  
+  .project-button-text {
+    font-size: 0.8rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+  }
+  
+  .project-button:hover {
+    box-shadow: 0 0 20px 5px rgba(252, 254, 234, 0.4);
+  }
+  
+  .project-button-content {
+    overflow: hidden;
+    position: relative;
+    height: fit-content;
+  }
+  
+  .project-button-content span {
+    display: block;
+    transition: 0.75s transform cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .project-button-content span:nth-child(2) {
+    position: absolute;
+  }
+  
+  .project-button:hover .project-button-content span:nth-child(1) {
+    transform: translateY(-100%);
+  }
+  
+  .project-button:hover .project-button-content span:nth-child(2) {
+    transform: translateY(-100%);
+  }
+
+  .cursor {
+    width: 1.75vw;
+    height: 1.75vw;
+    border-radius: 50%;
+  
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+  
+    background: white;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 1000;
+    display: none;
+  }
+
+  .btn {
+  }
+  
+  [data-hover] {
+  
+    [data-hover-bounds] {
+      position: absolute;
+      left: 0;
+      top: 0;
+      inset: 0;
+  
+      /*    outline: 1px solid red; */
+    }
+  
+    &:hover {
+      [data-hover-bounds] {
+        transform: scale(0);
+      }
+    }
   }
 }
 

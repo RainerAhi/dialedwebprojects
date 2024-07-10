@@ -227,8 +227,8 @@ function Project() {
       <div className="overlay-button-container">
         <button onClick={handleOpen} className="project-button btn menu-btn" data-hover >
           <div className="project-button-content">
-            <span className="project-button-text">PROJECTS</span>
-            <span className="project-button-text">PROJECTS</span>
+            <span className="project-button-text">{open ? 'CLOSE' : 'PROJECTS'}</span>
+            <span className="project-button-text">{open ? 'CLOSE' : 'PROJECTS'}</span>
           </div>
           <div data-hover-bounds></div>
         </button>
